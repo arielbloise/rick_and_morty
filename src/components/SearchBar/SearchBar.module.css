@@ -1,0 +1,38 @@
+.contenedor{
+    position: sticky;
+    display: flex;
+    top: 0;
+    padding: 5px;
+    align-items: right;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contenedor input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contenedor input:focus {
+    outline: none;
+  }
+  
+  .contenedor button {
+    background-color: #eb144c; /* rojo */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .contenedor button:hover {
+    cursor: pointer;
+    background-color: #6f2232; /* rojo oscuro */
+  }

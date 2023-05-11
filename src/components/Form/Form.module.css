@@ -1,0 +1,50 @@
+.Form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background-color: #00b6d7;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .Form label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  .Form input {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    width: 300px;
+  }
+  
+  .Form p {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .Form button {
+    background-color: #eb144c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  
+  .Form button:hover {
+    cursor: pointer;
+    background-color: #6f2232;
+  }
+  
