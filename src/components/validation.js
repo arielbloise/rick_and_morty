@@ -1,4 +1,4 @@
-export default (data) => {
+const validateData = (data) => {
     let errors ={}
 
     if(!data.email.includes('@')){
@@ -18,3 +18,5 @@ export default (data) => {
     }
     return errors
 }
+
+export default validateData
