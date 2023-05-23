@@ -5,20 +5,11 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_FAV":
-      return {
-        ...state,
-        myFavorites: [...state.allCharactersFav, action.payload],
-        allCharactersFav: [...state.allCharactersFav, action.payload]
-      };
+    case 'ADD_FAV':
+      return { ...state, myFavorites: action.payload, allCharactersFav: action.payload };
 
-    case "REMOVE_FAV":
-      return {
-        ...state,
-        myFavorites: state.myFavorites.filter(
-          (fav) => fav.id !== Number(action.payload)
-        ),
-      };
+      case 'REMOVE_FAV':
+        return { ...state, myFavorites: action.payload, allCharactersFav: action.payload};
 
       case "FILTER":
         const allCharactersFiltered = state.allCharactersFav.filter

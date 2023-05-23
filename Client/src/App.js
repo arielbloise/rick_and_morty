@@ -9,8 +9,7 @@ import About from "./components/About/About";
 import Detail from "./components/Detail/Detail";
 import Forms from "./components/Form/Form";
 import Favorites from "./components/Favorites/Favorites";
-const EMAIL = 'arielnbloise@gmail.com';
-const PASSWORD = 'tobias1187';
+
 
 
 
@@ -23,12 +22,15 @@ function App() {
 
 
 
-function login(userData) {
-   if (userData.password === PASSWORD && userData.email === EMAIL) {
-      setAccess(true);
-      navigate('/home');
-   }
-}
+  function login(userData) {
+    const { email, password } = userData;
+    const URL = 'http://localhost:3001/rickandmorty/login/';
+    axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+       const { access } = data;
+       setAccess(access);
+       access && navigate('/home');
+    });
+ }
 
 useEffect(() =>{
    !access && navigate('/');
