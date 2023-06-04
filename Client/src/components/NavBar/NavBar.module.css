@@ -28,4 +28,10 @@
     background-color: #6f2232; 
   }
   
-  
+  .NavBar img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 40px;
+    width: 80px;
+
+  }

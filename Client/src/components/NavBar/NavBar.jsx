@@ -1,6 +1,7 @@
 import SearchBar from "../SearchBar/SearchBar";
 import style from "./NavBar.module.css";
 import { NavLink } from "react-router-dom";
+import navimg from './navimg.png'
 
 const NavBar = ({ onSearch }) => {
   return (
@@ -8,6 +9,8 @@ const NavBar = ({ onSearch }) => {
      
      <div className={style.NavLinks}>
 
+     
+     
       <NavLink to="/home">
         <button>HOME</button>
       </NavLink>
@@ -20,6 +23,8 @@ const NavBar = ({ onSearch }) => {
         <button>ABOUT</button>
       </NavLink>
       </div>
+
+     <img src={navimg} alt="Logo" className={style.NavLogo} />
 
       <SearchBar onSearch={onSearch} />
 

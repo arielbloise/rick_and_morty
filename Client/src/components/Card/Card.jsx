@@ -44,7 +44,7 @@ const Card = ({
       <NavLink to={`/detail/${id}`}>
         <div>
           <img src={image} alt="" />
-          <h2>Name: {name}</h2>
+          <h1>{name}</h1>
           <h2>Status: {status}</h2>
           <h2>Species: {species}</h2>
           <h2>Gender: {gender}</h2>
